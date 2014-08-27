@@ -1,0 +1,36 @@
+{
+  "name": "ftp_fetcher",
+  "title": "ftp_fetcher",
+  "summary": "ftp_fetcher",
+  "dxapi": "1.0.0",
+  "version": "0.0.1",
+  "categories": [],
+  "inputSpec": [
+    {
+      "name": "username",
+      "class": "string",
+      "optional": true,
+      "default": "anonymous"
+    },
+    {
+      "name": "password",
+      "class": "string",
+      "optional": true
+    },
+    {
+      "name": "ftp_url",
+      "class": "string",
+      "optional": false
+    }
+  ],
+  "outputSpec": [],
+  "runSpec": {
+    "interpreter": "bash",
+    "file": "src/ftp_fetcher.sh"
+  },
+  "access": {
+    "project": "CONTRIBUTE",
+    "network": ["*"]
+  },
+  "authorizedUsers": []
+}
